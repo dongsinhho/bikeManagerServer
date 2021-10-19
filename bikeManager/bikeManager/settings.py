@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bikemanager',
         'USER': 'postgres',
-        'PASSWORD': 'Sinhlolfo3123',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
     }
