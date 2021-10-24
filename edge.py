@@ -1,17 +1,18 @@
 import requests
-from random import random
+import random
 import websocket
 import json
 import asyncio
 import logging
 
 mode = False  #mặc định của khoá xe là luôn đÓng
+
 logging.basicConfig(filename='data.log')
 
 def on_message(ws, message):   #nhận dữ liệu từ websocket báo là khoá xe đã đóng thì thay đổi chế độ
     print(message)
-    if (message.data.mode != mode):
-        global mode 
+    global mode
+    if (message.data.mode != mode): 
         mode = not mode 
         logging.info("--------------Start logging now ---------------------") if mode else logging.info("--------------Stop logging now ---------------------")
         # do something để đÓng khoá xe
@@ -38,8 +39,8 @@ def on_close(ws):
 
 async def SendData():
     while True:
-        latitude = random(10.870000,10.880000)
-        longtitude = random(106.780000,106.800000)
+        latitude = random.uniform(10.870000,10.880000)
+        longtitude = random.uniform(106.780000,106.800000)
         print("hello world")
         
         data = {
@@ -48,7 +49,7 @@ async def SendData():
                 "longtitude": longtitude
             }
         if not mode:
-            await requests.post("http://localhost:8000/api/bike/", data=data)
+            requests.post("http://localhost:8000/api/bike/", data=data)
         # else:
         #     await requests.post("localhost:8000/", data=data)
         else: 

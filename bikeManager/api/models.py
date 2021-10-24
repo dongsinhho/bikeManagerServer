@@ -12,7 +12,7 @@ class User(models.Model):
 class Edge(models.Model):
     latitude = models.DecimalField(max_digits=10,decimal_places=6)
     longtitude = models.DecimalField(max_digits=10,decimal_places=6)    
-    mode = models.BooleanField() # True: được thuê, flase: đang rảnh
+    mode = models.BooleanField(default=False) # True: được thuê, false: đang rảnh
 
 
 class bill(models.Model):
