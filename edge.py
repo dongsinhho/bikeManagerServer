@@ -6,7 +6,10 @@ import asyncio
 import logging
 
 mode = False  #mặc định của khoá xe là luôn đÓng
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf730c7dc2ffe77af94eb8d1d98a1139dc81170e
 logging.basicConfig(filename='data.log')
 
 def on_message(ws, message):   #nhận dữ liệu từ websocket báo là khoá xe đã đóng thì thay đổi chế độ
@@ -39,8 +42,13 @@ def on_close(ws):
 
 async def SendData():
     while True:
+<<<<<<< HEAD
         latitude = random.uniform(10.870000,10.880000)
         longtitude = random.uniform(106.780000,106.800000)
+=======
+        latitude = random(10.870000,10.880000)
+        longtitude = random(106.780000,106.800000)
+>>>>>>> bf730c7dc2ffe77af94eb8d1d98a1139dc81170e
         print("hello world")
         
         data = {
@@ -49,7 +57,11 @@ async def SendData():
                 "longtitude": longtitude
             }
         if not mode:
+<<<<<<< HEAD
             requests.post("http://localhost:8000/api/bike/", data=data)
+=======
+            await requests.post("http://localhost:8000/api/bike/", data=data)
+>>>>>>> bf730c7dc2ffe77af94eb8d1d98a1139dc81170e
         # else:
         #     await requests.post("localhost:8000/", data=data)
         else: 
