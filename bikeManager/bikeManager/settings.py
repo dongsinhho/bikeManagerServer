@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -70,7 +71,17 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'bikeManager.wsgi.application'
+ASGI_APPLICATION = 'bikeManager.asgi.application'
 
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
