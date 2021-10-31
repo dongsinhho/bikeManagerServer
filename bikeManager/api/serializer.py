@@ -6,12 +6,8 @@ from django.contrib.auth.hashers import make_password
 class EdgeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Edge
-        fields = ["id","latitude","longtitude"]
-    def create(self, validated_data):
-        return Edge.objects.create(**validated_data)
-    def update(self, instance, validated_data):
-        instance.id = validated_data.get('id', instance.id)
-        return instance
+        fields = ["latitude","longtitude"]
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

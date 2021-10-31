@@ -1,0 +1,1146 @@
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: w+FkkccYtLoia8R+X21MEw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 500 Internal server error
+DEBUG:websocket:-----------------------
+ERROR:websocket:error from callback <function on_close at 0x7f9c96c82dc0>: on_close() takes 1 positional argument but 3 were given
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: PLrhX6hPuw4icdjeB5wObw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 500 Internal server error
+DEBUG:websocket:-----------------------
+ERROR:websocket:error from callback <function on_close at 0x7f86bccc4dc0>: on_close() takes 1 positional argument but 3 were given
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: 6ia7gdS0CdOVDQVyoyab+A==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 500 Internal server error
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: GSpTiJwDw+Xj7bv89TFEWA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 500 Internal server error
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: FklsBiL31dumAmwrasKiWg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 500 Internal server error
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: dWvqwlVkz98z55O8HyvNUw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: vRMTp2uXeCU4PMP3pUKSYFnJcdk=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04HMos'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'HMos'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x12\xcf\x84\xdeZ\x82\xeb\xad'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'HMos'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04s7bP'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b's7bP'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xd4\x8d\xee\xb1\xa7\xba\x8c\xe1'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b's7bP'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x820\xa1\x99Y3I'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: hGG/FrvztyO1s9gCrZ26Lw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: ez3CuMDvJCKJBGRARYr9RcS3JM8=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04P7IW'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'P7IW'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xaa/\x15\xc3\xfa\x18\\\x94'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'P7IW'
+DEBUG:websocket:++Sent raw: b'\x88\x82P\x05[\xb5S\xed'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: BzGeMvBC1cwd8DY9OKUlJw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: cpLL7DMpTpTY8fSWoWSEXtk2C/U=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04nu7a'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'nu7a'
+DEBUG:websocket:++Sent raw: b'\x8a\x84{\x1eD\xa3\x15ks\xc2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'nu7a'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04+46t'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'+46t'
+DEBUG:websocket:++Sent raw: b'\x8a\x84^\xc0\x85\xaau\xf4\xb3\xde'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'+46t'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xa3r\xbd\x93\xa0\x9a'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: aXgGwBBQrCmeOA+ejmkI8A==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: WoeV2bnV+ZbERZ06iS7iADDyPMs=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x049vb8'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'9vb8'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf3\x08p\x17\xca~\x12/'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'9vb8'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04azEX'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'azEX'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa8.7v\xc9Tr.'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'azEX'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xb2\x0c\xf8d\xb1\xe4'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: 5aoT5lW+3EBMKuPlYXFI3Q==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: Dl8KdOYsr4kdfe+8GfjPN9QSeFU=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+ERROR:websocket:error from callback <function on_message at 0x7f0593b301f0>: 'str' object has no attribute 'data'
+DEBUG:websocket:++Rcv raw: b'\x89\x040g1Y'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'0g1Y'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x81\xddX\x1c\xb1\xbaiE'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'0g1Y'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+ERROR:websocket:error from callback <function on_message at 0x7f0593b301f0>: 'str' object has no attribute 'data'
+DEBUG:websocket:++Sent raw: b'\x88\x82_:\xd5\x7f\\\xd2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: BwO8z12He47O1uTWvhv4pA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: KzkYdOv949vE9lCJ5UlM4OonDPw=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04MYLq'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'MYLq'
+DEBUG:websocket:++Sent raw: b'\x8a\x84`\xceb\xb2-\x97.\xc3'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'MYLq'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04RNel'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'RNel'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x98\xea\xef\x00\xca\xa4\x8al'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'RNel'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.879326", "longtitude": "106.786313", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x041a6I'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'1a6I'
+DEBUG:websocket:++Sent raw: b'\x8a\x84O\xf4L<~\x95zu'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'1a6I'
+DEBUG:websocket:++Sent raw: b'\x88\x82\x0c\x12S\x9f\x0f\xfa'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: 1Ac1xBDagssqNsWgj29T9g==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: aIQ5ExTDXEIF75qSGI2mlzQjBA0=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04IKJ1'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'IKJ1'
+DEBUG:websocket:++Sent raw: b'\x8a\x84;\xc7\x1d\xb7r\x8cW\x86'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'IKJ1'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04cgIe'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'cgIe'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf4\xc2\xde7\x97\xa5\x97R'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'cgIe'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04tq/l'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'tq/l'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x12U<Nf$\x13"'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'tq/l'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x046qxg'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'6qxg'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x89#Q\x17\xbfR)p'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'6qxg'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04EnXJ'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'EnXJ'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x7f\x84\xce\xa8:\xea\x96\xe2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'EnXJ'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82Io\xccNJ\x87'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: cWr0wFVuqA1M0JS8PtigEg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: mqS6XcOzFVW4HIaqyXKo/uirtzc=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04pKll'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'pKll'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xae9y[\xder\x157'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'pKll'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04GwGi'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'GwGi'
+DEBUG:websocket:++Sent raw: b'\x8a\x84F\xce\xca\x8c\x01\xb9\x8d\xe5'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'GwGi'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04MbXO'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'MbXO'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa7\xc1\xd8\xcc\xea\xa3\x80\x83'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'MbXO'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Gi27'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Gi27'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xaf\xba=\x1b\xe8\xd3\x0f,'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Gi27'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04sTs9'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'sTs9'
+DEBUG:websocket:++Sent raw: b'\x8a\x84K\xf7\xe6\x088\xa3\x951'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'sTs9'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xe6\xb0B\xa6\xe5X'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: oVKIAOAOybMsU3Yo1FzHnw==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: IyASpioTMk1HcJk01oJqan34sYY=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877000", "longtitude": "106.791887", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\x15\x98\x85\xda\x16p'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: pt1WHhVChnqHutKYApb15w==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: L+rcpr01UMvyC6jde3ZrVdQ3QUM=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Sent raw: b'\x88\x82vt#\xabu\x9c'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: wbG3/KBAXfkR8+Chm7G/4g==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: zg+lcE1t8oVW2VXelU3fkFLT7po=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.876794", "longtitude": "106.792293", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.876794", "longtitude": "106.792293", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04h7Hv'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'h7Hv'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xea\x01\xf1@\x826\xb96'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'h7Hv'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.876794", "longtitude": "106.792293", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.876794", "longtitude": "106.792293", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\x8e\xe8\xd6t\x8d\x00'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: 8cE+6NXR7a7DmYPuDe4CDA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: 2K1WCn9JUOFlS/Jy/dC3C3b2w+w=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04pLD6'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'pLD6'
+DEBUG:websocket:++Sent raw: b'\x8a\x845"c\x88En\'\xbe'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'pLD6'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04RCjT'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'RCjT'
+DEBUG:websocket:++Sent raw: b'\x8a\x84S\x0eR4\x01M8`'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'RCjT'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\x89Z\xf4\xb4\x8a\xb2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: dQOowdEnfyAZMPTRfMS2eA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: R36bKWxFOxvGwadF/k8qidbopWw=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04pRSo'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'pRSo'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x9d&.\x87\xedt}\xe8'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'pRSo'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04cinz'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'cinz'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x14\x88\x15\x14w\xe1{n'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'cinz'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Au4c'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Au4c'
+DEBUG:websocket:++Sent raw: b'\x8a\x84g\xeag\xdc&\x9fS\xbf'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Au4c'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Syxe'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Syxe'
+DEBUG:websocket:++Sent raw: b'\x8a\x84f\x12\n\xfa5kr\x9f'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Syxe'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Pjng'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Pjng'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa4\x1f\xdc\xde\xf4u\xb2\xb9'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Pjng'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x040jSV'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'0jSV'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x1b\x9d\x9aN+\xf7\xc9\x18'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'0jSV'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04fu+1'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'fu+1'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xe6\xfcP\xc8\x80\x89{\xf9'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'fu+1'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04yBxB'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'yBxB'
+DEBUG:websocket:++Sent raw: b'\x8a\x84F\xfa\xc2\xf2?\xb8\xba\xb0'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'yBxB'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04QZUh'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'QZUh'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf8\xb4te\xa9\xee!\r'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'QZUh'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x0467Qr'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'67Qr'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xe4\x02\xd5\xb0\xd25\x84\xc2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'67Qr'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04gP/z'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'gP/z'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xcd\xbe]\xf2\xaa\xeer\x88'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'gP/z'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04X5EX'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'X5EX'
+DEBUG:websocket:++Sent raw: b'\x8a\x84KX\xbbb\x13m\xfe:'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'X5EX'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x042QfA'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'2QfA'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa3\n\xc4\xf4\x91[\xa2\xb5'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'2QfA'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xbeX4\xd1\xbd\xb0'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: betOGKhPb/18ozTlDAk5gA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: ryez+Vc3BOnQQ9cnnUNADoa0L/I=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Dudv'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Dudv'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x99\x94\xda\xca\xdd\xe1\xbe\xbc'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Dudv'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04VGFe'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'VGFe'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x95\xc7\x8fU\xc3\x80\xc90'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'VGFe'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04qy6X'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'qy6X'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xc4\x1c\xf7\r\xb5e\xc1U'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'qy6X'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04ZZ4b'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'ZZ4b'
+DEBUG:websocket:++Sent raw: b'\x8a\x84y\x8bYB#\xd1m '
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'ZZ4b'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04HwGo'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'HwGo'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x1baE\xecS\x16\x02\x83'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'HwGo'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04nRKh'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'nRKh'
+DEBUG:websocket:++Sent raw: b'\x8a\x84OP\x87\x14!\x02\xcc|'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'nRKh'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04FAp2'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'FAp2'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa4g\xcf\xbb\xe2&\xbf\x89'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'FAp2'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82X\x80\x11\x8d[h'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: /32hFB1ltBOwj6ploxV1gA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: PNNn5m6dnBbAd0Ygv6NKhbBFQMc=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04rA2d'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'rA2d'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf5\xf5\xf4\xff\x87\xb4\xc6\x9b'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'rA2d'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04CrN6'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'CrN6'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x10\x96{\x8bS\xe45\xbd'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'CrN6'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04y1oc'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'y1oc'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x81(&\x1c\xf8\x19I\x7f'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'y1oc'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x0456nj'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'56nj'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa0\xd3~\xa7\x95\xe5\x10\xcd'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'56nj'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04lDiK'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'lDiK'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf6~R&\x9a:;m'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'lDiK'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04wsLg'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'wsLg'
+DEBUG:websocket:++Sent raw: b'\x8a\x84C>\xfd\xa64M\xb1\xc1'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'wsLg'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\x0fC5\x86\x0c\xab'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: s2A+jog5gQSf7fhjZXc82w==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: 3ZyHnJ6viUqOY3WVKB7I1GkrRK0=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04hJXf'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'hJXf'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x14\xe4\xf1O|\xae\xa9)'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'hJXf'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04XE0c'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'XE0c'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x1b\xcf\xbc4C\x8a\x8cW'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'XE0c'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xcd\xe3\x17=\xce\x0b'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: 8tTpwPCWUmBWJ3Emc07dJg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: Vt+xWdqb0fv8eeBkM8zvnHEWt0Q=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04BBYg'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'BBYg'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x84\x94t\xc3\xc6\xd6-\xa4'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'BBYg'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x044S4r'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'4S4r'
+DEBUG:websocket:++Sent raw: b'\x8a\x84E\x19\r\xc8qJ9\xba'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'4S4r'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04fehI'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'fehI'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xed\t\xadh\x8bl\xc5!'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'fehI'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04b3ir'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'b3ir'
+DEBUG:websocket:++Sent raw: b'\x8a\x843\xda\xb9\xdcQ\xe9\xd0\xae'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'b3ir'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04ZIOX'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'ZIOX'
+DEBUG:websocket:++Sent raw: b'\x8a\x847~\xb5\xa4m7\xfa\xfc'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'ZIOX'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04YJIx'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'YJIx'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xad\xe8\x83\x17\xf4\xa2\xcao'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'YJIx'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04LLgS'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'LLgS'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x8bC\x18v\xc7\x0f\x7f%'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'LLgS'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x049kFk'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'9kFk'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xb6\x9b\x16\x02\x8f\xf0Pi'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'9kFk'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x046IBu'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'6IBu'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x9f\xdb\xc0\xa9\xa9\x92\x82\xdc'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'6IBu'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04mNp9'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'mNp9'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x16[U\x17{\x15%.'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'mNp9'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877582", "longtitude": "106.791973", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82;y`\t8\x91'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: zTXU5uI0YkkbxTGfzHb8tQ==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: nhIrFaPwZnqska3z9+v5oWODfH4=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04XON5'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'XON5'
+DEBUG:websocket:++Sent raw: b'\x8a\x84]\x82\x07\x9a\x05\xcdI\xaf'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'XON5'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x049AZG'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'9AZG'
+DEBUG:websocket:++Sent raw: b'\x8a\x84p\t\xc0\xa3IH\x9a\xe4'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'9AZG'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x047R/I'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'7R/I'
+DEBUG:websocket:++Sent raw: b'\x8a\x84}\xc2\x8d[J\x90\xa2\x12'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'7R/I'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04gbI3'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'gbI3'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xaa\xb26\xcb\xcd\xd0\x7f\xf8'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'gbI3'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04aPIp'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'aPIp'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x99\xa2\x96d\xf8\xf2\xdf\x14'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'aPIp'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.873509", "longtitude": "106.788199", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Sent raw: b'\x88\x82\xc8\x0c\x18%\xcb\xe4'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<wait() done, defined at /usr/lib/python3.8/asyncio/tasks.py:394> exception=ValueError('Set of coroutines/Futures is empty.')>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/tasks.py", line 413, in wait
+    raise ValueError('Set of coroutines/Futures is empty.')
+ValueError: Set of coroutines/Futures is empty.
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: V3f9uvhibdM9QK2qRvgapA==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: r3kj4fmvyuboboMhsIQyFeWaAPQ=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04B7+n'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'B7+n'
+DEBUG:websocket:++Sent raw: b'\x8a\x84<e\x92%~R\xb9K'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'B7+n'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04tuyi'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'tuyi'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xc9\x1e\xdb\xe3\xbdk\xa2\x8a'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'tuyi'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04eICY'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'eICY'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xa7h\xc1\x85\xc2!\x82\xdc'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'eICY'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x049DjL'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'9DjL'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\\\xe2`\xcae\xa6\n\x86'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'9DjL'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04uR2S'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'uR2S'
+DEBUG:websocket:++Sent raw: b'\x8a\x84-\x9d\\\x0cX\xcfn_'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'uR2S'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Z+0S'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Z+0S'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x00\xb3\x8e\x8fZ\x98\xbe\xdc'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Z+0S'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04cKNo'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'cKNo'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xdc*\xc5a\xbfa\x8b\x0e'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'cKNo'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04tQGR'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'tQGR'
+DEBUG:websocket:++Sent raw: b'\x8a\x84!\x0cs\xdeU]4\x8c'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'tQGR'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04W6YX'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'W6YX'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xdd\xfa\xf7%\x8a\xcc\xae}'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'W6YX'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04FX/9'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'FX/9'
+DEBUG:websocket:++Sent raw: b'\x8a\x845\x88\xc4\xc8s\xd0\xeb\xf1'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'FX/9'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x040WJb'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'0WJb'
+DEBUG:websocket:++Sent raw: b'\x8a\x84P\x9c\xd1\xa8`\xcb\x9b\xca'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'0WJb'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04L0xV'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'L0xV'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x0b\x9a\x99\xe6G\xaa\xe1\xb0'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'L0xV'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04YOY3'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'YOY3'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\\rg\xcd\x05=>\xfe'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'YOY3'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x042Ui7'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'2Ui7'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf0\xbf\xb8\xe5\xc2\xea\xd1\xd2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'2Ui7'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04uKRK'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'uKRK'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf1\xbf\xb8\xb9\x84\xf4\xea\xf2'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'uKRK'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04rN1e'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'rN1e'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xabY\xee=\xd9\x17\xdfX'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'rN1e'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x042RT6'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'2RT6'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xf7\x96%1\xc5\xc4q\x07'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'2RT6'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04H1Ap'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'H1Ap'
+DEBUG:websocket:++Sent raw: b'\x8a\x84:%\x0f*r\x14NZ'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'H1Ap'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Eolk'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Eolk'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xd6mq\xf4\x93\x02\x1d\x9f'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Eolk'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04yz6u'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'yz6u'
+DEBUG:websocket:++Sent raw: b'\x8a\x84V\xdbB\x82/\xa1t\xf7'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'yz6u'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04om0V'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'om0V'
+DEBUG:websocket:++Sent raw: b'\x8a\x84`E\x9b\xc8\x0f(\xab\x9e'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'om0V'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Jyp9'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Jyp9'
+DEBUG:websocket:++Sent raw: b'\x8a\x84uW\xed\x12?.\x9d+'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Jyp9'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04jM1H'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'jM1H'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xdf\xc5M0\xb5\x88|x'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'jM1H'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Ge1Y'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Ge1Y'
+DEBUG:websocket:++Sent raw: b'\x8a\x84tq\xc8I3\x14\xf9\x10'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Ge1Y'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04ScEl'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'ScEl'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x16d\xef\x08E\x07\xaad'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'ScEl'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04GxlA'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'GxlA'
+DEBUG:websocket:++Sent raw: b'\x8a\x84[5H\x06\x1cM$G'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'GxlA'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04E351'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'E351'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xce\xe4L\x18\x8b\xd7y)'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'E351'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04av6B'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'av6B'
+DEBUG:websocket:++Sent raw: b'\x8a\x847[[\xadV-m\xef'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'av6B'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x045BG3'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'5BG3'
+DEBUG:websocket:++Sent raw: b"\x8a\x84'~\xba\xc0\x12<\xfd\xf3"
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'5BG3'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04/918'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'/918'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x16\x12|\x949+M\xac'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'/918'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04fJft'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'fJft'
+DEBUG:websocket:++Sent raw: b'\x8a\x84<\xbf;\xccZ\xf5]\xb8'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'fJft'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x041IOy'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'1IOy'
+DEBUG:websocket:++Sent raw: b'\x8a\x84-A\xd0=\x1c\x08\x9fD'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'1IOy'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04F1XD'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'F1XD'
+DEBUG:websocket:++Sent raw: b'\x8a\x84~H\xce28y\x96v'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'F1XD'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x049FGI'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'9FGI'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xde\x94*&\xe7\xd2mo'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'9FGI'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04ZPbW'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'ZPbW'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\x9a\xce\xc1\xb9\xc0\x9e\xa3\xee'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'ZPbW'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04bqvW'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'bqvW'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xe0L\x0eK\x82=x\x1c'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'bqvW'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04zgpq'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'zgpq'
+DEBUG:websocket:++Sent raw: b'\x8a\x84=[\n\xa5G<z\xd4'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'zgpq'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04Q/KP'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'Q/KP'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\n\x17\x8b\x05[8\xc0U'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'Q/KP'
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04lWIW'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'lWIW'
+DEBUG:websocket:++Sent raw: b'\x8a\x84\xe8(\x08\xca\x84\x7fA\x9d'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'lWIW'
+DEBUG:websocket:++Sent raw: b'\x88\x82s\xb5\x07\xedp]'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'
+DEBUG:websocket:--- request header ---
+DEBUG:websocket:GET /ws/edge/ HTTP/1.1
+Upgrade: websocket
+Host: localhost:8000
+Origin: http://localhost:8000
+Sec-WebSocket-Key: X6XsqRffPgSR/55J2jqADg==
+Sec-WebSocket-Version: 13
+Connection: Upgrade
+
+
+DEBUG:websocket:-----------------------
+DEBUG:websocket:--- response header ---
+DEBUG:websocket:HTTP/1.1 101 Switching Protocols
+DEBUG:websocket:Server: Daphne
+DEBUG:websocket:Upgrade: WebSocket
+DEBUG:websocket:Connection: Upgrade
+DEBUG:websocket:Sec-WebSocket-Accept: B/HaKXMWTks4Yn36VHOQxxRm0MQ=
+DEBUG:websocket:-----------------------
+DEBUG:websocket:++Rcv raw: b'\x81~\x00\x9e[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=1 data=b'[{"id": 2, "latitude": "10.877236", "longtitude": "106.780989", "mode": false}, {"id": 1, "latitude": "10.872279", "longtitude": "106.795174", "mode": false}]'
+DEBUG:websocket:++Rcv raw: b'\x89\x04cWIc'
+DEBUG:websocket:++Rcv decoded: fin=1 opcode=9 data=b'cWIc'
+DEBUG:websocket:++Sent raw: b'\x8a\x84q;\x13\xb5\x12lZ\xd6'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=10 data=b'cWIc'
+DEBUG:websocket:++Sent raw: b'\x88\x82Q]\x0btR\xb5'
+DEBUG:websocket:++Sent decoded: fin=1 opcode=8 data=b'\x03\xe8'

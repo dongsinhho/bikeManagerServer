@@ -1,5 +1,7 @@
 from channels.generic.websocket import AsyncJsonWebsocketConsumer
-import json
+
+
+
 
 class WSConsummer(AsyncJsonWebsocketConsumer):
     async def connect(self):
@@ -11,4 +13,4 @@ class WSConsummer(AsyncJsonWebsocketConsumer):
 
     async def send_new_data(self, event):
         data = event['text']
-        await self.send(json.dumps(data))
+        await self.send(data)

@@ -1,6 +1,8 @@
+from django.db import models
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics
+from django.shortcuts import get_object_or_404
 
 from .models import Edge, User
 from .serializer import EdgeSerializer, UserSerializer
@@ -8,9 +10,12 @@ from .serializer import EdgeSerializer, UserSerializer
 
 # Create your views here.
 
-class EdgeInfo(APIView):
-    def post(self, request):
-        serializer = EdgeSerializer(Edge, data=request.data)
+class UpdateDeleteEdgeView(generics.RetrieveUpdateDestroyAPIView):
+    models = Edge
+    serializer_class = EdgeSerializer
+    def put(self, request, *args, **kwargs):
+        edge = get_object_or_404(Edge, id=kwargs.get('pk'))
+        serializer = EdgeSerializer(edge,data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
