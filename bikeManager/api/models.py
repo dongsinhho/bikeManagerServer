@@ -1,12 +1,21 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser, UserManager
 
 # Create your models here.
 
-class User(models.Model):
-    name = models.CharField(max_length=255)
-    email = models.EmailField(max_length=255)
+
+class User(AbstractUser):
+    username = models.CharField(max_length=255)
+    avatar = models.URLField(max_length=255, default="")
+    balance = models.IntegerField(default=0)
+    email = models.EmailField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
     create = models.DateTimeField(auto_created=True, auto_now=True)
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
+    objects = UserManager()
+    def __str__(self):
+        return self.username
 
 
 class Edge(models.Model):
@@ -15,9 +24,10 @@ class Edge(models.Model):
     mode = models.BooleanField(default=False) # True: được thuê, false: đang rảnh
 
 
-class bill(models.Model):
+class Bill(models.Model):
     timeStart = models.DateTimeField(auto_now=False, auto_now_add=False)
     timeFinish = models.DateTimeField(auto_now=False, auto_now_add=False)
     status = models.BooleanField(default=False) # True: đã trả, False: chưa trả
-    user = models.ForeignKey(User,on_delete=models.DO_NOTHING)
+    cost = models.IntegerField(default=0)
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
     edge = models.ForeignKey(Edge,on_delete=models.CASCADE)
