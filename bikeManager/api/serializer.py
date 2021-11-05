@@ -9,6 +9,7 @@ class EdgeSerializer(serializers.ModelSerializer):
         fields = ["latitude","longtitude","mode"]
 
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
