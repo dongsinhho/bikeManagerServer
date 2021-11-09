@@ -25,9 +25,9 @@ class Edge(models.Model):
 
 
 class Bill(models.Model):
-    timeStart = models.DateTimeField(auto_now=False, auto_now_add=False)
-    timeFinish = models.DateTimeField(auto_now=False, auto_now_add=False)
+    timeStart = models.DateTimeField(auto_now=True, auto_now_add=True)
+    timeFinish = models.DateTimeField(auto_now=False, auto_now_add=False, default=None)
     status = models.BooleanField(default=False) # True: đã trả, False: chưa trả
-    cost = models.IntegerField(default=0)
+    cost = models.IntegerField(default=100)
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     edge = models.ForeignKey(Edge,on_delete=models.CASCADE)

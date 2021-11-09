@@ -1,14 +1,14 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status, generics, permissions
+from rest_framework import serializers, status, generics, permissions
 from django.shortcuts import get_object_or_404
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 from django.contrib.auth import authenticate
 from django.http import Http404
 
-from .models import Edge, User
-from .serializer import EdgeSerializer, UserSerializer, UserLoginSerializer
+from .models import Edge, User, Bill
+from .serializer import EdgeSerializer, UserSerializer, UserLoginSerializer, GetBillSerializer, PostBillSerializer, UpdateBillSerializer
 
 
 # Create your views here.
@@ -84,9 +84,32 @@ class UserLoginView(APIView):
             'error_code': 400
         }, status=status.HTTP_400_BAD_REQUEST)
 
+
 class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [permissions.IsAuthenticated]
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
+
+class BillView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    def get(self, request):
+        user =  request.user.username
+        bill = Bill.objects.filter(user_username=user)
+        serializer = GetBillSerializer(bill)
+        return Response(serializer.data)
+    def post(self, request):
+        serializer = PostBillSerializer(data=request.data)
+        serializer.save()
+        
+        if serializer.is_valid():
+        #     return Response({
+        #         'error_message': 'Email or password is incorrect!',
+        #         'error_code': 400
+        #     }, status=status.HTTP_400_BAD_REQUEST)
+            
+        # return Response({
+        #     'error_messages': serializer.errors,
+        #     'error_code': 400
+        # }, status=status.HTTP_400_BAD_REQUEST)
 
