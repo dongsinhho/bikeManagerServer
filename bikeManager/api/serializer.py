@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from rest_framework import serializers, status
 from .models import Edge, User, Bill
 from django.contrib.auth.hashers import make_password
 import datetime 
@@ -37,16 +37,29 @@ class UserLoginSerializer(serializers.ModelSerializer):
 
 class PostBillSerializer(serializers.ModelSerializer):
     edge = serializers.RelatedField(source='Edge', read_only=True)
+    user = serializers.RelatedField(source='User', read_only=True)
     class Meta:
         model = Bill
-        fields = ["pk","edge", "user"]
-    def create(self, validated_data, user):
-        validated_data['edge'] = validated_data.get('id')
-        validated_data['user'] = user
-        bill = Bill.objects.create(**validated_data)
-        return bill
+        fields = ["edge", "user", "timeStart"]
+    def create(self, validated_data):
+        print(validated_data)
+        edge = Edge.objects.get(id=validated_data.get('id'))
+        if (edge.mode):
+            return {"status": False, "message":"This bike has been rented"}
+        check = Bill.objects.filter(status=False,user=validated_data.get('user'))
+        if check.exists()==True:
+            return {"status": False, "message":"This user has been rent another bike"}
+        validated_data['edge'] = edge
+        validated_data['user'] = validated_data.get('user')
+        validated_data['timeStart'] = datetime.datetime.now()
+        bill = Bill.objects.create(edge=validated_data['edge'], user=validated_data['user'],timeStart=validated_data['timeStart'])
+        bill.save()
+        edge.mode = True
+        edge.save()
+        return {"status": True, "message": bill.id }
 
-class GetBillSerializer:
+
+class GetBillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bill
         fields = ["pk", "cost", "status"]
@@ -58,7 +71,7 @@ class UpdateBillSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         instance.timeFinish = datetime.datetime.now()
         instance.status = True
-        instance.cost = instance.timeStart.timestamp() - datetime.datetime.now().timestamp()
+        instance.cost = datetime.datetime(instance.timeStart).timestamp() - datetime.datetime.now().timestamp()
         return instance
 
 

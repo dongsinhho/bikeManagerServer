@@ -8,7 +8,8 @@ from django.contrib.auth import authenticate
 from django.http import Http404
 
 from .models import Edge, User, Bill
-from .serializer import EdgeSerializer, UserSerializer, UserLoginSerializer, GetBillSerializer, PostBillSerializer, UpdateBillSerializer
+from .serializer import (EdgeSerializer, UserSerializer, UserLoginSerializer, 
+    GetBillSerializer ,GetBillDetailSerializer, PostBillSerializer, UpdateBillSerializer)
 
 
 # Create your views here.
@@ -94,22 +95,39 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
 class BillView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def get(self, request):
-        user =  request.user.username
+        print(request.user)
+        user =  request.user
         bill = Bill.objects.filter(user_username=user)
         serializer = GetBillSerializer(bill)
         return Response(serializer.data)
-    def post(self, request):
-        serializer = PostBillSerializer(data=request.data)
-        serializer.save()
-        
+    def post(self, request): #gui len id cua xe-EDGE, tra ve id cua bill
+        request.data.update({"user":request.user})
+        serializer = PostBillSerializer()
+        kq = serializer.create(validated_data=request.data)     
+        if kq["status"]:
+            return Response({
+                'message': 'Create successful!',
+                'bill_id': kq["message"]
+            }, status=status.HTTP_201_CREATED)
+        else:
+            return Response({
+                'error_message': kq['message'],
+                'error_code': 400
+            }, status=status.HTTP_400_BAD_REQUEST)
+class BillDetailView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    def put(self, request, pk, format=None):
+        bill = self.get_object(pk)
+        serializer = UpdateBillSerializer(bill, data=request.data)
         if serializer.is_valid():
-        #     return Response({
-        #         'error_message': 'Email or password is incorrect!',
-        #         'error_code': 400
-        #     }, status=status.HTTP_400_BAD_REQUEST)
-            
-        # return Response({
-        #     'error_messages': serializer.errors,
-        #     'error_code': 400
-        # }, status=status.HTTP_400_BAD_REQUEST)
-
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        else:
+            return Response({
+                'error_message': 'du lieu loi, khong the serializer',
+                'error_code': 400
+            }, status=status.HTTP_400_BAD_REQUEST)
+    
+    def get(self, request, pk, format=None):
+        bill = self.get_object(pk)
+        serializer = GetBillDetailSerializer(bill)
+        return Response(serializer.data)

@@ -22,12 +22,15 @@ class Edge(models.Model):
     latitude = models.DecimalField(max_digits=10,decimal_places=6)
     longtitude = models.DecimalField(max_digits=10,decimal_places=6)    
     mode = models.BooleanField(default=False) # True: được thuê, false: đang rảnh
-
+    def __str__(self):
+        return str(self.pk)
 
 class Bill(models.Model):
-    timeStart = models.DateTimeField(auto_now=True, auto_now_add=True)
-    timeFinish = models.DateTimeField(auto_now=False, auto_now_add=False, default=None)
+    timeStart = models.DateTimeField(auto_now=False,auto_now_add=False)
+    timeFinish = models.DateTimeField(auto_now=False, auto_now_add=False, default=None, null=True, blank=True)
     status = models.BooleanField(default=False) # True: đã trả, False: chưa trả
     cost = models.IntegerField(default=100)
-    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    user = models.ForeignKey(User,related_name='Bills',on_delete=models.CASCADE)
     edge = models.ForeignKey(Edge,on_delete=models.CASCADE)
+    def __str__(self):
+        return str(self.id)
