@@ -8,8 +8,7 @@ from django.contrib.auth import authenticate
 from django.http import Http404
 
 from .models import Edge, User, Bill
-from .serializer import (EdgeSerializer, UserSerializer, UserLoginSerializer, 
-    GetBillSerializer ,GetBillDetailSerializer, PostBillSerializer, UpdateBillSerializer)
+from .serializer import *
 
 
 # Create your views here.
@@ -86,20 +85,42 @@ class UserLoginView(APIView):
         }, status=status.HTTP_400_BAD_REQUEST)
 
 
-class UserDetail(generics.RetrieveUpdateDestroyAPIView):
+class UserDetail(APIView):
     permission_classes = [permissions.IsAuthenticated]
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+    def get(self, request, pk, format=None):
+        userCheck = request.user.id 
+        if userCheck != pk:
+            return Response({
+                "error_message":"You don't have permission"
+            }, status=status.HTTP_401_UNAUTHORIZED)
+        user = User.objects.get(pk=pk)
+        serializer = UserDetailSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    def put(self, request, pk, format=None):
+        userCheck = request.user.id 
+        if userCheck != pk:
+            return Response({
+                "error_message":"You don't have permission"
+            }, status=status.HTTP_401_UNAUTHORIZED)
+        user = User.objects.get(pk=pk)
+        serializer = UserUpdateSerializer()
+        data = serializer.update(user,validated_data=request.data)
+        return Response({
+            "message": "update successful !"
+        }, status=status.HTTP_202_ACCEPTED)
+        
+    # queryset = User.objects.all()
+    # serializer_class = UserSerializer
 
 
 class BillView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def get(self, request):
-        print(request.user)
-        user =  request.user
-        bill = Bill.objects.filter(user_username=user)
-        serializer = GetBillSerializer(bill)
-        return Response(serializer.data)
+        user =  request.user.id
+        bill = Bill.objects.filter(user_id=user)
+        print(bill)
+        serializer = GetBillSerializer(bill,many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     def post(self, request): #gui len id cua xe-EDGE, tra ve id cua bill
         request.data.update({"user":request.user})
         serializer = PostBillSerializer()
@@ -117,17 +138,21 @@ class BillView(APIView):
 class BillDetailView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     def put(self, request, pk, format=None):
-        bill = self.get_object(pk)
-        serializer = UpdateBillSerializer(bill, data=request.data)
-        if serializer.is_valid():
-            return Response(serializer.data, status=status.HTTP_200_OK)
+        bill = get_object_or_404(Bill, pk=pk)
+        request.data.update({"userid":request.user.id})
+        serializer = UpdateBillSerializer()
+        kq = serializer.update(instance=bill, validated_data=request.data)
+        if kq["return"]:
+            return Response({"cost":kq["message"]}, status=status.HTTP_200_OK)
         else:
             return Response({
-                'error_message': 'du lieu loi, khong the serializer',
+                'error_message': kq["message"],
                 'error_code': 400
             }, status=status.HTTP_400_BAD_REQUEST)
     
     def get(self, request, pk, format=None):
-        bill = self.get_object(pk)
+        bill = get_object_or_404(Bill, id=pk)
         serializer = GetBillDetailSerializer(bill)
         return Response(serializer.data)
+
+# Tru tien khi user thue xe vao put Bill - balance

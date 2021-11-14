@@ -27,6 +27,25 @@ class UserSerializer(serializers.ModelSerializer):
         return super(UserSerializer, self).create(validated_data)
 
 
+class UserDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["username","avatar", "balance","email", "create"]
+
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["username","avatar", "balance"]
+    def update(self, instance, validated_data):
+        instance.username = validated_data.get('username',instance.username)
+        instance.avatar = validated_data.get('avatar', instance.avatar)
+        instance.balance = validated_data.get('balance', instance.balance)
+        #instance.password = make_password(validated_data.get('password'))
+        instance.save()
+        return instance
+
+
 class UserLoginSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -64,15 +83,27 @@ class GetBillSerializer(serializers.ModelSerializer):
         model = Bill
         fields = ["pk", "cost", "status"]
 
+
+def countCost(start, end):
+    timeRent = (end - start)/3600 #hours
+    return round(timeRent)
 class UpdateBillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bill
         fields = ["timeFinish","status", "cost"]
+
+
     def update(self, instance, validated_data):
+        if instance.status:
+            return {"return":False, "message":"This bill has been paid"}
         instance.timeFinish = datetime.datetime.now()
         instance.status = True
-        instance.cost = datetime.datetime(instance.timeStart).timestamp() - datetime.datetime.now().timestamp()
-        return instance
+        instance.cost = countCost((instance.timeStart).timestamp(),datetime.datetime.now().timestamp())
+        instance.save()
+        user = User.objects.get(pk=validated_data['userid'])
+        user.balance = user.balance - instance.cost
+        user.save()
+        return {"return":True, "message":instance.cost}
 
 
 class GetBillDetailSerializer(serializers.ModelSerializer):

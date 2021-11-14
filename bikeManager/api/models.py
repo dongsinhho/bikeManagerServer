@@ -6,7 +6,7 @@ from django.contrib.auth.models import AbstractUser, UserManager
 
 class User(AbstractUser):
     username = models.CharField(max_length=255)
-    avatar = models.URLField(max_length=255, default="")
+    avatar = models.ImageField(default=None, upload_to='images')
     balance = models.IntegerField(default=0)
     email = models.EmailField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
