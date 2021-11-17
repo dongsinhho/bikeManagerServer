@@ -86,7 +86,7 @@ class GetBillSerializer(serializers.ModelSerializer):
 
 def countCost(start, end):
     timeRent = (end - start)/3600 #hours
-    return round(timeRent)
+    return round(timeRent,2) * 2
 class UpdateBillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bill
