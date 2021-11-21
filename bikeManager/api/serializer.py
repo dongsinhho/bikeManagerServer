@@ -1,7 +1,8 @@
 from rest_framework import serializers, status
 from .models import Edge, User, Bill
 from django.contrib.auth.hashers import make_password
-import datetime 
+import datetime, json
+from .utils import Red
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -47,7 +48,17 @@ class UserLoginSerializer(serializers.ModelSerializer):
     username = serializers.EmailField(required=True)
     password = serializers.CharField(required=True)
 
-
+def caching(status, id):
+    rent = Red.get('rented')
+    if rent:
+        rent = json.loads(rent)
+        rent[id] = status
+        Red.set('rented', rent)    
+    else:
+        data = {
+            id : status
+        }
+        Red.set('rented', data) 
 class PostBillSerializer(serializers.ModelSerializer):
     edge = serializers.RelatedField(source='Edge', read_only=True)
     user = serializers.RelatedField(source='User', read_only=True)
@@ -60,6 +71,7 @@ class PostBillSerializer(serializers.ModelSerializer):
         if (edge.mode):
             return {"status": False, "message":"This bike has been rented"}
         check = Bill.objects.filter(status=False,user=validated_data.get('user'))
+        caching(True,validated_data.get('id'))
         if check.exists()==True:
             return {"status": False, "message":"This user has been rent another bike"}
         validated_data['edge'] = edge
@@ -94,6 +106,11 @@ class UpdateBillSerializer(serializers.ModelSerializer):
         instance.status = True
         instance.cost = countCost((instance.timeStart).timestamp(),datetime.datetime.now().timestamp())
         instance.save()
+        caching(False,instance.edge.id)
+        edge = instance.edge
+        edge.mode = False
+        edge.save()
+        # instance.edge.
         user = User.objects.get(pk=validated_data['userid'])
         user.balance = user.balance - instance.cost
         user.save()

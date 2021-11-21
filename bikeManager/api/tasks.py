@@ -24,8 +24,17 @@ def send_location():
             edge = Red.get(item)
             edge = json.loads(edge)
             edge['id'] = item
-            # edge = json.dumps(edge, indent=4)
-            print(edge)
+            rent = Red.get('rented')
+            if rent is None:
+                edge['mode'] = False
+            else:
+                rent = json.loads(rent)
+                print(rent, type(rent))
+                if item in rent:
+                    edge['mode'] = rent[item]
+                else:
+                    edge['mode'] = False
+                # edge['mode'] = rent[item]
             data.append(edge)
     data = json.dumps(data, default=default)
 
