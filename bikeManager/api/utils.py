@@ -1,7 +1,7 @@
 import redis
 import json
 
-rds = redis.StrictRedis(port=6379, db=0)
+rds = redis.StrictRedis(port=6379, db=0,host='redis')
 
 class Red:
     def getAllKey():
