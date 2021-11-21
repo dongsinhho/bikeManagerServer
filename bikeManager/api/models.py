@@ -19,11 +19,20 @@ class User(AbstractUser):
 
 
 class Edge(models.Model):
-    latitude = models.DecimalField(max_digits=10,decimal_places=6)
-    longtitude = models.DecimalField(max_digits=10,decimal_places=6)    
+    # latitude = models.DecimalField(max_digits=10,decimal_places=6)
+    # longtitude = models.DecimalField(max_digits=10,decimal_places=6)    
     mode = models.BooleanField(default=False) # True: được thuê, false: đang rảnh
+    
     def __str__(self):
         return str(self.pk)
+
+class Bike(models.Model):
+    edge = models.ForeignKey(Edge, on_delete=models.CASCADE)
+    time = models.DateTimeField(auto_created=True, auto_now=True)
+    latitude = models.DecimalField(max_digits=10,decimal_places=6)
+    longtitude = models.DecimalField(max_digits=10,decimal_places=6)
+    def __str__(self):
+        return "Bike:" + str(self.edge) + "  time: " +str(self.time)
 
 class Bill(models.Model):
     timeStart = models.DateTimeField(auto_now=False,auto_now_add=False)

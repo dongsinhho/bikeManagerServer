@@ -3,12 +3,6 @@ from .models import Edge, User, Bill
 from django.contrib.auth.hashers import make_password
 import datetime 
 
-class EdgeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Edge
-        fields = ["latitude","longtitude","mode"]
-
-
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

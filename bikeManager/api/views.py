@@ -9,35 +9,29 @@ from django.http import Http404
 
 from .models import Edge, User, Bill
 from .serializer import *
-
+from .utils import Red
+import json
+from decimal import Decimal
 
 # Create your views here.
+def default(obj):
+    if isinstance(obj, Decimal):
+        return str(obj)
+    raise TypeError("Object of type '%s' is not JSON serializable" % type(obj).__name__)
 
 class BikeInfoView(APIView):
-    permission_classes = [ permissions.IsAuthenticated]
-    # def post(self, request):
-    #     serializer = EdgeSerializer(data=request.data)
-    #     if serializer.is_valid():
-    #         edge = serializer.save()
-    #         return Response({
-    #             'message': 'Create successful!'
-    #         }, status=status.HTTP_201_CREATED)
-    #     else:
-    #         return Response({
-    #             'error_message': 'Something wrong!',
-    #             'errors_code': 400,
-    #         }, status=status.HTTP_400_BAD_REQUEST)
-    def put(self, request, *args, **kwargs):
-        edge = get_object_or_404(Edge, id=kwargs.get('pk'))
-        serializer = EdgeSerializer(edge,data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    permission_classes = [ permissions.AllowAny]
+    def post(self, request, *args, **kwargs):
+        Red.set(kwargs.get('pk'),request.data)
+        return Response(status=status.HTTP_200_OK)
     def get(self, request, *args, **kwargs):
-        edge= get_object_or_404(Edge, id=kwargs.get('pk'))
-        serializer = EdgeSerializer(edge)
-        return Response(serializer.data)
+        for item in Red.getAllKey():
+            if item.isnumeric() and int(item) == kwargs.get('pk'):
+                edge = Red.get(item)
+                edge = json.loads(edge)
+                edge['id'] = item
+                return Response(edge,status=status.HTTP_200_OK)
+
         
 class UserRegisterView(APIView):
     permission_classes = [ permissions.AllowAny]
