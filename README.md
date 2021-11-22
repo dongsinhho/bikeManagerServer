@@ -1,7 +1,7 @@
 # RENTAL BIKE SYSTEM 
 ## Step 1: Clone this repos
 ## Step 2: Start multi-container
-        docker-compose up
+        docker-compose up -d
 ## Step 3: Active Database Postgres
         docker exec -it django sh
         python manage.py migrate
